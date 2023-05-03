@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyWebApi.model;
 using InterviewManager.Services;
+using MyWebApi;
 
-
-namespace MyWebApi
+namespace InterviewManager.Controllers
 {
-    [ApiController]
+    
     [Route("api/[controller]")]
+    [ApiController]
     public class InterviewsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
